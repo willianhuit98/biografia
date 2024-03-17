@@ -11,14 +11,17 @@
         <script>
 
         window.addEventListener('DOMContentLoaded', (event) => {
-        const audio = new Audio('sound/sound2.mp3');
-        audio.play();
-        const audio2 = new Audio('sound/sound.mp3');
-        audio.addEventListener('ended', () => {
-            audio2.play();
-        
-        }
-        );
+            const playAudio = () => {
+                const audio = new Audio('sound/sound2.mp3');
+                audio.play();
+                const audio2 = new Audio('sound/sound.mp3');
+                audio.addEventListener('ended', () => {
+                    audio2.play();
+                });
+            };
+
+            document.addEventListener('click', playAudio);
+            document.addEventListener('keydown', playAudio);
         });
         </script>
         </head>
