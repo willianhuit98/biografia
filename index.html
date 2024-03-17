@@ -9,15 +9,11 @@
             href="https://fonts.googleapis.com/css2?family=Madimi+One&family=Vibur&display=swap"
             rel="stylesheet">
         <script>
-            let audio = new Audio('sound/sound.mp3');
-            function playAudio() {
-                if (audio.paused){
-                    audio.play();
-                } else {
-                    audio.pause();
-                }
-                
-            }
+            
+            window.addEventListener('DOMContentLoaded', (event) => {
+                const audio = new Audio('sound/sound.mp3');
+                audio.play();
+            });
         </script>
     </head>
     <body>
