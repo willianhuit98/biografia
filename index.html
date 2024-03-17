@@ -9,52 +9,58 @@
             href="https://fonts.googleapis.com/css2?family=Madimi+One&family=Vibur&display=swap"
             rel="stylesheet">
         <script>
-            
-            window.addEventListener('DOMContentLoaded', (event) => {
-                const audio = new Audio('sound/sound.mp3');
-                audio.play();
-            });
+
+        window.addEventListener('DOMContentLoaded', (event) => {
+        const audio = new Audio('sound/sound2.mp3');
+        audio.play();
+        const audio2 = new Audio('sound/sound.mp3');
+        audio.addEventListener('ended', () => {
+            audio2.play();
+        
+        }
+        );
+        });
         </script>
-    </head>
-    <body>
+        </head>
+        <body>
 
         <div class="content">
             <div class="navigator">
-                <ul>
-                    <li class="list active">
-                        <a href="#aire">
-                            <span class="icon"><img src="img/icons/air.png"
-                                    width="40px" height="40px"
-                                    alt="home"></span>
-                            <span class="text">Aire</span>
-                        </a>
-                    </li>
-                    <li class="list">
-                        <a href="#agua">
-                            <span class="icon"><img src="img/icons/agua.png"
-                                    width="50px" height="50px"
-                                    alt="home"></span>
-                            <span class="text">Agua</span>
-                        </a>
-                    </li>
-                    <li class="list">
-                        <a href="#tierra" onclick="playAudio()">
-                            <span class="icon"><img src="img/icons/tierra.png"
-                                    width="40px" height="50px"
-                                    alt="home"></span>
-                            <span class="text">Tierra</span>
-                        </a>
-                    </li>
-                    <li class="list">
-                        <a href="#fuego">
-                            <span class="icon"><img src="img/icons/fuego.png"
-                                    width="50px" height="50px"
-                                    alt="home"></span>
-                            <span class="text">Fuego</span>
-                        </a>
-                    </li>
-                </ul>
-                <div class="indicator">
+            <ul>
+                <li class="list active">
+                <a href="#aire">
+                    <span class="icon"><img src="img/icons/air.png"
+                        width="40px" height="40px"
+                        alt="home"></span>
+                    <span class="text">Aire</span>
+                </a>
+                </li>
+                <li class="list">
+                <a href="#agua">
+                    <span class="icon"><img src="img/icons/agua.png"
+                        width="50px" height="50px"
+                        alt="home"></span>
+                    <span class="text">Agua</span>
+                </a>
+                </li>
+                <li class="list">
+                <a href="#tierra">
+                    <span class="icon"><img src="img/icons/tierra.png"
+                        width="40px" height="50px"
+                        alt="home"></span>
+                    <span class="text">Tierra</span>
+                </a>
+                </li>
+                <li class="list">
+                <a href="#fuego">
+                    <span class="icon"><img src="img/icons/fuego.png"
+                        width="50px" height="50px"
+                        alt="home"></span>
+                    <span class="text">Fuego</span>
+                </a>
+                </li>
+            </ul>
+            <div class="indicator"></div>
 
                 </div>
 
@@ -62,7 +68,7 @@
         </div>
         <div>
             <section id="aire">
-                <div class="his-cont">
+                <div class="his-cont bgaire">
                     <div class="img-story aire">
 
                         <img src="img/bg/aire.jpeg" alt="air">
@@ -130,7 +136,7 @@
         </div>
         <div>
             <section id="agua">
-                <div class="his-cont">
+                <div class="his-cont bgagua">
                     <div class="legend-agua">
                         <div class="text-info">
                             <h1>Agua - La corriente a favor (11 - 20 años)</h1>
@@ -228,7 +234,7 @@
         </div>
         <div>
             <section id="tierra">
-                <div class="his-cont">
+                <div class="his-cont bgtierra">
                     <div class="img-story tierra">
 
                         <img src="img/bg/tierra.jpeg" alt="air">
@@ -337,12 +343,12 @@
         </div>
         <div>
             <section id="fuego">
-                <div class="his-cont">
+                <div class="his-cont bgfuego">
 
                     <div class="legend-fuego">
                         <div class="text-info">
                             <h1>Fuego - El futuro que resplandece</h1>
-                            <p>Mi nombre es Willian Eduardo Huit Tepen y no descanzaré hasta cumplir todos mis sueños y metas.</p>
+                            <p>Mi nombre es Willian Eduardo Huit Tepen, aún tengo muchas metas y sueños que cumplir, dios me guiará y cumpliré todo lo que me proponga</p>
                             <div>
                                 <img class="img-profile" src="img/fotos/img1.jpg" width="150px" height="150px" alt="Willian Huit">
                                 <img class="img-profile" src="img/fotos/img2.jpg" width="150px" height="150px" alt="Willian Huit">
@@ -363,7 +369,11 @@
                                 <img class="img-profile" src="img/fotos/img11.jpg" width="150px" height="150px" alt="Willian Huit">
                                 <img class="img-profile" src="img/fotos/img12.jpg" width="150px" height="150px" alt="Willian Huit">
                             </div>
+                            <p>
+                                Dios bendice a quienes le obedecen, dichoso el hombre que pone su confianza en el señor. Salmo 34:8   
+                            </p>
                         </div>
+                        
                     </div>
                     <div class="img-story fuego">
 

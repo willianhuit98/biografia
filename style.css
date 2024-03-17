@@ -84,8 +84,20 @@
 }
 .his-cont{
   display: flex;
-  
 
+}
+.bgaire{
+  background-color: #DAEADF;
+
+}
+.bgagua{
+  background-color: #022857;
+}
+.bgtierra{
+  background-color: #662d00;
+}
+.bgfuego{
+  background-color: #c4492a;
 }
 .legend-aire{
   padding-right: 10px;
@@ -176,4 +188,10 @@ p{
 }
 .img-profile{
   object-fit: cover;
+  transition: 0.5s;
+}
+.img-profile:hover{
+  transform: scale(1.2);
+  cursor: pointer;
+  border-radius: 5px;
 }
