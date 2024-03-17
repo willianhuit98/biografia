@@ -9,15 +9,16 @@
             href="https://fonts.googleapis.com/css2?family=Madimi+One&family=Vibur&display=swap"
             rel="stylesheet">
         <script>
-
+            const audio = new Audio('sound/sound.mp3');
         window.addEventListener('DOMContentLoaded', (event) => {
             const playAudio = () => {
-                const audio = new Audio('sound/sound2.mp3');
-                audio.play();
+                if (audio==undefined || audio.paused) {
+                    audio.play();
                 const audio2 = new Audio('sound/sound.mp3');
                 audio.addEventListener('ended', () => {
                     audio2.play();
                 });
+                }
             };
 
             document.addEventListener('click', playAudio);
